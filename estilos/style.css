@@ -4,10 +4,137 @@
 
 :root{
     --font: 'Inter', sans-serif;
+
+    --cor1: #9A44E1;
+    --cor2: #7900DB;
+    --cor3: #5D00A8;
+    --cor4: #3F1C5C;
+    --cor5: #32005C;
 }
 
 *{
     padding: 0;
     margin: 0;
     font-family: var(--font);
+}
+
+header{
+    background-image: linear-gradient(to top, black, var(--cor5), var(--cor3));
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+    margin: 0px 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.button-box{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+button:hover{
+    box-shadow: 1px 1px 10px var(--cor1);
+    transform: ();
+}
+
+.button-box a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.img-box-hamburguer{
+    display: none;
+}
+
+.menu-hamburguer{
+    display: none;
+}
+
+
+@media screen and (max-width: 730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .button-box{
+        display: none;
+    }
+
+    .img-box-hamburguer{
+        display: block;
+    }
+
+    .img-box-hamburguer button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-hamburguer ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-hamburguer .link-list{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menu-hamburguer .button-box-hamburguer{
+        display: block;
+        padding: 1rem 2rem ;
+    }
+
+    .menu-hamburguer .button-box-hamburguer button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
 }
