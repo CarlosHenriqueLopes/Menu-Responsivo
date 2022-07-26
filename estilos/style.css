@@ -18,6 +18,10 @@
     font-family: var(--font);
 }
 
+body{
+    background-color: #D6C2E1;
+}
+
 header{
     background-image: linear-gradient(to top, black, var(--cor5), var(--cor3));
 }
@@ -73,7 +77,6 @@ button{
 
 button:hover{
     box-shadow: 1px 1px 10px var(--cor1);
-    transform: ();
 }
 
 .button-box a{
