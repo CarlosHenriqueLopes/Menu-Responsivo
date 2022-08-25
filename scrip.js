@@ -1,11 +1,11 @@
+const box_img = window.document.querySelector('.img-box-hamburguer')
+const lista = window.document.querySelector('ul')
+
 function mostrarmeno(){
-    let menuMobile = document.querySelector('.menu-hamburguer');
-    if (menuMobile.classList.contains('open')){
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = [imagem];
-    } else{
-            menuMobile.classList.add('open');
-            document.querySelector('.icon').src = [imagem];
-        }
+
+    if (lista.style.display == 'block'){
+        lista.style.display = 'none'
+    } else {
+        lista.style.display = 'block'
     }
 }
